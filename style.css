@@ -10,10 +10,6 @@
     display: flex;
 }
 
-.infantil {
-    display: inline-flexbox;
-}
-
 .catalogo img {
     width: 100%;
 }
