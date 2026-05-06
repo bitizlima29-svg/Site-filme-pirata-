@@ -1,0 +1,19 @@
+#logoSite {
+    width: 175px;
+}
+
+.catalogo .filme-container {
+    width: 100px;
+}
+
+.catalogo {
+    display: flex;
+}
+
+.infantil {
+    display: inline-flexbox;
+}
+
+.catalogo img {
+    width: 100%;
+}
