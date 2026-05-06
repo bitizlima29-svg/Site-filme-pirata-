@@ -12,6 +12,21 @@
     justify-content: center;
 }
 
+.header-logo-block {
+    display: block;
+}
+
+main p {
+    font-size: large;
+    font-weight: 500;
+}
+
+main,
+.texto-diferente {
+    background-color: rgb(158, 8, 8);
+    color: white;
+}
+
 body {
     background-color: black;
     color: rgb(158, 8, 8);
@@ -31,6 +46,7 @@ p {
 /* Espaçamento das seções */
 .catalogo>div {
     margin: 30px 0;
+    text-align: center;
 }
 
 /* Container dos filmes */
@@ -38,17 +54,38 @@ p {
     display: inline-block;
     /* deixa lado a lado */
     margin: 10px;
+    vertical-align: top;
+    position: relative;
 }
 
 /* Imagens dos filmes */
 .filme-container img {
     width: 200px;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
     border-radius: 10px;
-    transition: 0.3s;
+}
+
+/* Título do filme sobre a imagem */
+.titulo-filme {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    pointer-events: none;
+    white-space: nowrap;
 }
 
 /* Efeito ao passar o mouse */
 .filme-container img:hover {
+    cursor: pointer;
     transform: scale(1.1);
 }
