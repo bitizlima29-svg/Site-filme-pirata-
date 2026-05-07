@@ -6,6 +6,8 @@
     justify-content: center;
 }
 
+
+
 .header-logo {
     display: flex;
     align-items: center;
@@ -28,8 +30,12 @@ main,
 }
 
 body {
-    background-color: black;
-    color: rgb(158, 8, 8);
+    background-image: url(./img/Fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: black; */
+    color: white;
     /* deixa o texto visível */
     font-family: Arial, sans-serif;
     margin: 0;
